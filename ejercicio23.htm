@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 23</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <style>
+      #color1,
+      #color2,
+      #color3,
+      #color4,
+      #color5,
+      #color6,
+      #color7 {
+        width: 50px;
+        height: 50px;
+      }
+      #color1 {
+        background-color: cadetblue;
+      }
+      #color2 {
+        background-color: rgb(91, 206, 139);
+      }
+      #color3 {
+        background-color: rgb(216, 128, 116);
+      }
+      #color4 {
+        background-color: rgb(129, 209, 210);
+      }
+      #color5 {
+        background-color: rgb(227, 209, 119);
+      }
+      #color6 {
+        background-color: rgb(70, 147, 223);
+      }
+      #color7 {
+        background-color: rgb(194, 108, 211);
+      }
+      #color8 {
+        background-color: rgb(112, 64, 102);
+      }
+      .colores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        p {
+          grid-column: 1 / 3;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-3">
+    <div class="w-25 d-flex align-items-center m-auto p-3 gap-2 shadow border">
+      <div class="colores">
+        <p>Colores</p>
+        <div id="color1"></div>
+        <div id="color2"></div>
+        <div id="color3"></div>
+        <div id="color4"></div>
+        <div id="color5"></div>
+        <div id="color6"></div>
+        <div id="color7"></div>
+        <div id="color8"></div>
+      </div>
+      <p id="texto" class="p-2 border rounded-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+        dolores.
+      </p>
+    </div>
+  </body>
+</html>

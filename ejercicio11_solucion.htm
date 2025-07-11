@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio11</title>
+</head>
+<body>
+    <h1>Los resultados salen en la consola</h1>
+    <script>
+        const precio = 20.4;
+        const cantidad = 5;
+        const total = precio * cantidad;
+        if(total > 100) {
+            console.log(total - total * 0.10, total * 0.10);
+            // Más bonito (ved que hay que poner la resta entre paréntesis para que no concatente primero el total a lo anterior)
+            console.log("Total: " + total + " Descuento: " + total * 0.1 + " Total con descuento: " + (total - total * 0.1));
+            // Con interpolación
+            console.log(`Total: ${total} Descuento: ${total * 0.1} Total con descuento: ${total - total * 0.1}`);
+        }
+    </script>
+    
+</body>
+</html>

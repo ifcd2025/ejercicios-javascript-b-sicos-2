@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 26</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+<body class="p-3">
+    <div class="w-25 d-flex flex-column bg-light m-auto p-3 gap-2 shadow border position-relative">
+        <img src="cartel1.jpg" alt="cartel" id="foto">
+        <p class="text-center" id="titulo">Ecos de Silicio</p>
+        <fieldset class="d-flex justify-content-around">
+            <input type="radio" name="cartel" id="cartel1" checked>
+            <input type="radio" name="cartel" id="cartel2">
+            <input type="radio" name="cartel" id="cartel3">
+        </fieldset>
+    </div>
+
+    <script>
+        function mostrarCartel1() {
+            document.getElementById("foto").src="cartel1.jpg"
+            document.getElementById("titulo").textContent = "Ecos de Silicio";
+        }
+
+        function mostrarCartel2() {
+            document.getElementById("foto").src="cartel2.jpg"
+            document.getElementById("titulo").textContent = "La Última Función";
+        }
+
+        function mostrarCartel3() {
+            document.getElementById("foto").src="cartel3.jpg"
+            document.getElementById("titulo").textContent = "El día que ocurrió";
+        }                
+
+        document.getElementById("cartel1").addEventListener("click", mostrarCartel1);
+        document.getElementById("cartel2").addEventListener("click", mostrarCartel2);
+        document.getElementById("cartel3").addEventListener("click", mostrarCartel3);
+    </script>
+</body>
+</html>
